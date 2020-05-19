@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	
-	double compras, ticketmedio;
+	double compras, ticketmedio, atraso, pagamento;
 	
 	cout <<endl<< "SISTEMA DE PERFIL DE CLIENTE" << endl;
 	cout << "--------------------------------" << endl;
@@ -15,6 +15,10 @@ int main(){
 	cout << "Qual o ticket médio? ";
 	cin >> ticketmedio;
 	
+	cout <<endl<< "Quantas vezes o cliente atrasou o pagamento?";
+	cin >> atraso;
+	cout << "A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?";
+	cin >> pagamento;
 	
 	return 0;
 }
