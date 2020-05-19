@@ -34,7 +34,7 @@ int main(){
         pontos1 = 40;
     }
     
-	else{
+	if(score > 3000 ){
     	pontos1 = 60;
 	}    
 	
@@ -61,8 +61,15 @@ int main(){
 	
 	cout << "Score de forma de pagamento = "<< 	pontos3 << " pontos" << endl;
 	
-	
-	
+	if (pontos1 + pontos2 + pontos3 <= 25 ) {
+		cout <<endl<< "Classificação final = CLIENTE BRONZE" <<endl;
+	}
+	else if (pontos1 + pontos2 + pontos3 < 75) {
+		cout <<endl<< "Classificação final = CLIENTE PRATA" <<endl;
+	}
+    else if (pontos1 + pontos2 + pontos3 < 75 ) {
+		cout <<endl<< "Classificação final = CLIENTE OURO" <<endl;
+	}
 	
 	return 0;
 }
